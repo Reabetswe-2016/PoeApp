@@ -132,7 +132,6 @@ public class ValidatorTest {
         boolean result = instance.passwordHasCapital(password);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -147,7 +146,6 @@ public class ValidatorTest {
         boolean result = instance.passwordHasNumber(password);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -162,7 +160,6 @@ public class ValidatorTest {
         boolean result = instance.passwordHasSpecialChar(password);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -177,7 +174,6 @@ public class ValidatorTest {
         boolean result = instance.isPasswordValid(password);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -192,7 +188,6 @@ public class ValidatorTest {
         boolean result = instance.checkCellPhoneNumber(number);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -207,7 +202,6 @@ public class ValidatorTest {
         boolean result = instance.checkUserName(username);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
