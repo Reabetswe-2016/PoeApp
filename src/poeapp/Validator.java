@@ -48,7 +48,7 @@ public class Validator {
     
     }
     public boolean checkCellPhoneNumber(String number){
-        return number.startsWith("+27") && number.length() == 12;
+        return number.matches ("\\+27\\d{9}");
     }
     public boolean checkUserName(String username){
         return username.contains("_") && username.length() <=5;

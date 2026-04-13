@@ -13,7 +13,7 @@ public class LoginTest {
     public void testRegisterUser() {
         Login instance = new Login();
 
-        String result = instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary");
+        String result = instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary", "+27685139480");
 
         assertEquals("User has been registered successfully.", result);
     }
@@ -23,7 +23,7 @@ public class LoginTest {
         Login instance = new Login();
 
         // FIRST register the user
-        instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary");
+        instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary", "+27685139480");
 
         // THEN test login
         boolean result = instance.loginUser("Rea_1", "98Rea@12");
@@ -33,7 +33,7 @@ public class LoginTest {
 
     @Test
     public void testReturnLoginStatus() {
-        Login instance = new Login("Rea_1", "98Rea@12", "Reabetswe", "Gary");
+        Login instance = new Login("Rea_1", "98Rea@12", "Reabetswe", "Gary", "+27685139480");
 
         String result = instance.returnLoginStatus(true);
 
@@ -43,7 +43,7 @@ public class LoginTest {
     public void testLoginFailed() {
     Login instance = new Login();
 
-    instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary");
+    instance.registerUser("Rea_1", "98Rea@12","Reabetswe", "Gary", "+27685139480");
 
     boolean result = instance.loginUser("wrong", "wrong");
 
@@ -53,7 +53,7 @@ public class LoginTest {
     public void testUsernameIncorrect() {
     Login instance = new Login();
 
-    String result = instance.registerUser("invalidUsername", "98Rea@12","Reabetswe", "Gary");
+    String result = instance.registerUser("invalidUsername", "98Rea@12","Reabetswe", "Gary", "+27685139480");
 
     assertEquals("Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.", result);
 }
@@ -61,7 +61,7 @@ public class LoginTest {
     public void testPasswordIncorrect() {
     Login instance = new Login();
 
-    String result = instance.registerUser("Rea_1", "password","Reabetswe", "Gary");
+    String result = instance.registerUser("Rea_1", "password","Reabetswe", "Gary", "+27685139480");
 
     assertEquals("Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.", result);
 }
