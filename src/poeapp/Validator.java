@@ -53,5 +53,43 @@ public class Validator {
     public boolean checkUserName(String username){
         return username.contains("_") && username.length() <=5;
     }
+    public static String checkMessageLength(String message){
+
+    if(message.length() <= 250){
+
+        return "Message ready to send.";
+
+    }else{
+
+        int exceed = message.length() - 250;
+
+        return "Message exceeds 250 characters by "
+                + exceed
+                + ", please reduce size.";
+    }
+}
+    public static boolean checkRecipientCell(String recipient){
+
+    return recipient.matches("\\+27\\d{9}");
+}
+    public static String createMessageHash(
+        String messageID,
+        int messageNumber,
+        String message){
+
+    String[] words = message.split(" ");
+
+    String firstWord = words[0].toUpperCase();
+
+    String lastWord =
+            words[words.length - 1].toUpperCase();
+
+    return messageID.substring(0,2)
+            + ":"
+            + messageNumber
+            + ":"
+            + firstWord
+            + lastWord;
+}
     
 }
