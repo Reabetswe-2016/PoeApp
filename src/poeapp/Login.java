@@ -9,7 +9,7 @@ package poeapp;
  * @author Reabe
  */
 
-    public class Login 
+    public class Login { 
     private String username;
     private String password;
     private String firstName;
