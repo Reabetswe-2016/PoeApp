@@ -25,4 +25,19 @@ public class Message {
         this.messageHash = messageHash;
         this.messageID = messageID;
     }
+    public String getRecipient() {
+    return recipient;
+}
+
+public String getMessage() {
+    return message;
+}
+
+public String getMessageHash() {
+    return messageHash;
+}
+
+public long getMessageID() {
+    return messageID;
+}
 }
