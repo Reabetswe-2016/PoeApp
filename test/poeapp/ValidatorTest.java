@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 
 public class ValidatorTest {
     
+    
 
     @Test
     public void testHasCapital() {
